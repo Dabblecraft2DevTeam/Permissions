@@ -1,0 +1,55 @@
+  factions.access: {description: manage access, with the proper fperm, default: false}
+  factions.access.faction: {description: grant faction access, with the proper fperm, default: false}
+  factions.access.player: {description: grant player access, with the proper fperm, default: false}
+  factions.access.view: {description: view access, default: false}
+  factions.admin: {description: enable adminmode, default: false}
+  factions.create: {description: create new faction, default: false}
+  factions.demote: {description: demote lesser members in your faction, default: false}
+  factions.description: {description: change faction description, default: false}
+  factions.disband: {description: disband faction, default: false}
+  factions.expansions: {description: list expansions, default: false}
+  factions.faction: {description: show faction information, default: false}
+  factions.flag: {description: manage faction flags, default: false}
+  factions.home: {description: teleport to faction home, default: false}
+  factions.invite: {description: set if player is invited, default: false}
+  factions.join: {description: join faction, default: false}
+  factions.join.any: {description: join closed faction, default: false}
+  factions.join.others: {description: have another player join faction, default: false}
+  factions.kick: {description: kick player from faction, default: false}
+  factions.leader: {description: set leader for faction, default: false}
+  factions.leader.any: {description: set leader for another faction, default: false}
+  factions.leave: {description: leave your faction, default: false}
+  factions.list: {description: list all factions, default: false}
+  factions.map: {description: show territory map, default: false}
+  factions.money: {description: manage faction money, default: false}
+  factions.money.balance: {description: show faction money, default: false}
+  factions.money.balance.any: {description: show another factions money, default: false}
+  factions.money.deposit: {description: deposit to faction, default: false}
+  factions.money.f2f: {description: transfer f --> f, default: false}
+  factions.money.f2p: {description: transfer f --> p, default: false}
+  factions.money.p2f: {description: transfer p --> f, default: false}
+  factions.money.withdraw: {description: withdraw from faction, default: false}
+  factions.motd: {description: faction motd, default: false}
+  factions.officer: {description: make player officer, default: false}
+  factions.officer.any: {description: set officers for another faction, default: false}
+  factions.open: {description: set if invitation is required to join, default: false}
+  factions.perm: {description: change faction permissions, default: false}
+  factions.player: {description: show player information}
+  factions.powerboost: {description: set powerboost, default: false}
+  factions.promote: {description: promote lesser members in your faction, default: false}
+  factions.relation: {description: set relation wish to another faction, default: false}
+  factions.seechunk: {description: see the chunk you stand in, default: false}
+  factions.seechunkold: {description: see the chunk you stand in, default: false}
+  factions.set: {description: set faction territory, default: false}
+  factions.set.one: {description: set faction for a single chunk, default: false}
+  factions.set.auto: {description: set faction as you walk around, default: false}
+  factions.set.fill: {description: set faction by filling, default: false}
+  factions.set.square: {description: set faction by square and radius, default: false}
+  factions.set.circle: {description: set faction by circle and radius, default: false}
+  factions.set.transfer: {description: set faction by transfer, default: false}
+  factions.sethome: {description: set the faction home, default: false}
+  factions.name: {description: set faction name, default: false}
+  factions.title: {description: set player title, default: false}
+  factions.title.color: {description: set player title with color, default: false}
+  factions.unsethome: {description: unset faction home, default: false}
+  factions.version: {description: see plugin version, default: false}
