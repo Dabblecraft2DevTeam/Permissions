@@ -64,8 +64,6 @@ groups:
     - chestcommands.open.warps.yml
     - essentials.back
     - essentials.warps.jail
-    - libsdisguises.undisguise
-    - libsdisguises.disguise.*
     - essentials.warps.forums
     - essentials.warps.S_Haven
     - essentials.kit.m
@@ -86,7 +84,6 @@ groups:
     - essentials.warp.list
     - essentials.balance.others
     - essentials.balance
-    - bukkit.command.plugins
     - essentials.signs.enchant.allowunsafe
     - essentials.signs.use.enchant
     - essentials.signs.use.balance
