@@ -1,5 +1,7 @@
 groups:
   default:
+    permissions:
+    - acceptrules.notifyonaccept
     options:
       rank: '3'
       rank-ladder: Player
