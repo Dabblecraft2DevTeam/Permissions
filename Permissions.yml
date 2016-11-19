@@ -10,10 +10,33 @@ groups:
     - essentials.kits.pilot
     - essentials.kits.Tools
     - essentials.kit.Tools
+    - quickshop.create.self
+    - quickshop.create.buy
+    - quickshop.create.double
+    - quickshop.use
+    - brewery.user
+    - brewery.createbarrel.*
+    - brewery.openbarrel.*
+    - brewery.cauldron.time
+    - brewery.cauldron.insert
+    - brewery.cauldron.fill
+    - brewery.cmd.info
+    - pvpmanager.user
+    - structureinabox.use
+    - debitcard.user
+    - moneyformat.balance
+    - jobs.use
+    - banknotes.withdraw
+    - banknotes.deposit
+    - factions.kit.fullplayer
     - essentials.kit.pilot
+    - lockette.pick
     - essentials.kits
     - essentials.me
     - essentials.msg
+    - cannons.player.*
+    - enjin.points.getself
+    - essentials.list
     - essentials.tpdeny
     - essentials.tpaccept
     - essentials.tpa
@@ -103,6 +126,8 @@ groups:
     - essentials.signs.use.sell
     - essentials.signs.use.buy
     - essentials.signs.use.free
+    - ibounty.mkbounty
+    - ibounty.lsbounty
     - essentials.helpop
     - essentials.mail
     - essentials.mail.send
@@ -196,6 +221,7 @@ groups:
     permissions:
     - factions.*
     - chatcolor.*
+    - mutemanager.*
     - cc.*
     - clearchat.*
     - essentials.gamemode
@@ -210,9 +236,11 @@ groups:
     - essentials.powertool
     - essentials.joinfullserver
     - -worldedit.butcher
+    - commandspy.use
     - worldedit.*
     - essentials.chat.color
     - essentials.chat.format
+    - jail.*
     - essentials.chat.magic
     - essentials.heal.cooldown.bypass
     - essentials.feed.cooldown.bypass
@@ -251,6 +279,7 @@ groups:
     - bukkit.command.save.perform
     - essentials.skull
     - ServerSpy.*
+    - coreprotect.*
     - essentials.socialspy
     - essentials.helpop.receive
     - essentials.skull.*
@@ -258,6 +287,7 @@ groups:
     - essentials.setjail
     - essentials.jails
     - essentials.deljail
+    - lag.*
     - essentials.sleepingignored
     - essentials.chat.ignoreexempt
     - worldedit.navigation.thru.tool
@@ -265,6 +295,9 @@ groups:
     - worldguard.locate
     - coreprotect.inspect
     - essentials.weather
+    - worldborder.bypass
+    - worldborder.list
+    - supervanish.*
     - coreprotect.lookup
     options:
       rank: '4'
@@ -289,6 +322,9 @@ groups:
     permissions:
     - mcbans.ban
     - mcbans.kick
+    - jail.*
+    - commandspy.use
+    - coreprotect.*
     - upack.explosion
     - mcmmo.perks.xp.quadruple.all
     - mcmmo.perks.cooldowns.quartered
@@ -296,7 +332,13 @@ groups:
     - playervaults.admin
     - essentials.spawnmob.*
     - essentials.spawnmob
+    - messageannouncer.admin
+    - nocheatplus.bypass
+    - supervanish.*
     - essentials.nick
+    - lag.*
+    - worldborder.bypass
+    - worldborder.list
     - vanish.list
     - essentials.clearinventory
     - essentials.tpohere
@@ -304,6 +346,8 @@ groups:
     - chestcommands.item.admin-console.yml
     - chestcommands.open.admin-console.yml
     - menu.Admin
+    - logblock.*
+    - mutemanager.*
     - worldguard.region.bypass.*
     - movecraft.
     - worldedit.*
