@@ -1,7 +1,7 @@
-**Rank:**
+Rank:
 
-**Plugin or feature:**
+Plugin or feature:
 
-**Player name:**
+Player name:
 
-**Explain the issue for example what you were doing:**
+Explain the issue for example what you were doing:
