@@ -7,6 +7,24 @@ groups:
       prefix: '&6[&cNoob&6]'
   Player:
     permissions:
+    - movecraft.nuke.*
+    - movecraft.qtorpedo.*
+    - movecraft.bigsubairskiff.*
+    - movecraft.car.*
+    - ItemSlotMachine.slot.modify.*
+    - ItemSlotMachine.slot.*
+    - ItemSlotMachine.coin.purchase
+    - ItemSlotMachine.slot.check
+    - ItemSlotMachine.slot.use
+    - company.use
+    - mcmmo.defaults
+    - movecraft.ironclad.*
+    - essentials.msg.url
+    - essentials.chat.url
+    - movecraft.Airship.*
+    - SimpleReportsEx.report
+    - movecraft.turret.*
+    - movecraft.bigairskiff.*
     - essentials.kits.pilot
     - essentials.kits.Tools
     - essentials.kit.Tools
@@ -51,7 +69,6 @@ groups:
     - essentials.warps.creative
     - multiverse.access.Creative
     - essentials.suicide
-    - movecraft.Airship.*
     - movecraft.Airskiff.*
     - movecraft.citygate.*
     - movecraft.elevator.*
@@ -97,6 +114,7 @@ groups:
     - chestcommands.open.warps.yml
     - essentials.back
     - essentials.warps.jail
+    - libsdisguises.undisguise
     - essentials.warps.forums
     - essentials.warps.S_Haven
     - essentials.kit.m
@@ -117,6 +135,7 @@ groups:
     - essentials.warp.list
     - essentials.balance.others
     - essentials.balance
+    - bukkit.command.plugins
     - essentials.signs.enchant.allowunsafe
     - essentials.signs.use.enchant
     - essentials.signs.use.balance
@@ -143,13 +162,32 @@ groups:
     - essentials.tpahere
     - essentials.spawn
     - essentials.afk
-    - cannons.player.*
     options:
       rank: '2'
       rank-ladder: Player
       prefix: '&6[&cMember&6] '
   Super-Player:
     permissions:
+    - mcmmo.perks.xp.triple.all
+    - mcmmo.perks.cooldowns.quartered
+    - tardis.area.PlayerShops1
+    - essentials.enderchest
+    - tardis.steampunk
+    - tardis.redstone
+    - tardis.deluxe
+    - tardis.twelfth
+    - tardis.twelth
+    - tardis.eleventh
+    - tardis.war
+    - tardis.bigger
+    - tardis.create
+    - tardis.use
+    - essentials.kits.Pvp1
+    - essentials.feed
+    - tardis.remote
+    - tardis.room
+    - tardis.save
+    - tardis.home
     - upack.list
     - upack.help
     - upack.off
@@ -210,19 +248,51 @@ groups:
     - essentials.whois
     - essentials.spawner.*
     - essentials.spawner
-    - essentials.god
     - essentials.heal
     options:
       rank: '2'
       rank-ladder: Fun
+      prefix: '&6[&4&kH&3Super-Player&4&kH&6]'
+    inheritance:
+    - Player
   Mod:
     permissions:
+    - lockettepro.lockothers
+    - lockettepro.admin.edit
+    - lockettepro.admin.use
+    - lockettepro.admin.break
+    - signs.*
+    - essentials.give
+    - essentials.feed
+    - essentials.gc
+    - nocheatplus.shortcut.bypass
+    - essentials.speed
+    - essentials.seen
+    - essentials.tps
+    - essentials.fly
+    - essentials.item
+    - AntiAd.alert
+    - ifill.*
+    - SimpleReportsEx.solvereport
+    - SimpleReportsEx.getreports
+    - libsdisguises.*
+    - essentials.sell.hand
+    - essentials.sellhand
+    - essentials.sell.*
+    - sell.*
+    - mcbans.*
+    - crackshot.*
+    - essentials.gamemode
+    - essentials.gmc
+    - tardis.*
+    - movecraft.*
+    - mv.bypass.gamemode.*
+    - essentials.nick.format
+    - essentials.nick
     - factions.*
     - chatcolor.*
-    - mutemanager.*
     - cc.*
     - clearchat.*
-    - essentials.gamemode
     - upack.fire
     - worldedit.inventory.unrestricted
     - essentials.signs.format
@@ -305,6 +375,8 @@ groups:
     - Player
   Ultra-Player:
     permissions:
+    - mcmmo.perks.cooldowns.thirded
+    - mcmmo.perks.xp.50percentboost.all
     - upack.enchant
     - essentials.ext
     - essentials.powertooltoggle
@@ -318,6 +390,16 @@ groups:
       rank-ladder: Staff
       prefix: '&6[&4&kH&cAdmin&4&kH&6] '
     permissions:
+    - lockettepro.*
+    - nocheatplus.shortcut.bypass
+    - AntiAd.alert
+    - AntiAd.mod
+    - SimpleReportsEx.deletereport
+    - SimpleReportsEx.tpreport
+    - SimpleReportsEx.getreports
+    - SimpleReportsEx.solvereport
+    - tardis.*
+    - mv.bypass.gamemode.*
     - mcbans.ban
     - mcbans.kick
     - jail.*
@@ -382,17 +464,30 @@ groups:
       rank: '1'
       rank-ladder: Player
     permissions:
+    - mcmmo.perks.xp.double.all
+    - mcmmo.perks.activationtime.twelveseconds
     - essentials.fly
   HeadMod:
     options:
       rank: '3'
       rank-ladder: Staff
+      prefix: '&6[&b&kh&1HeadMod&b&kh&6]&r '
     permissions:
     - essentials.tempban.offline
     - upack.waterdrip
     - essentials.tempban
+    inheritance:
+    - Mod
   Owner:
     permissions:
+    - tardis.admin
+    - nocheatplus.shortcut.bypass
+    - nextquarry.admin
+    - nextquarry.user.*
+    - tardis.area.*
+    - tardis.*
+    - mv.bypass.gamemode.*
+    - mv.bypass.gamemode
     - multiverse.bypass.gamemode.*
     - -essentials.protect.damage.*
     - vanish.toggle.all
@@ -404,12 +499,36 @@ groups:
       prefix: '&6[&4&kH&c&lOwner&4&kH&6] '
   Builder:
     permissions:
+    - ce.*
+    - customenchants.*
+    - movecraft.car.*
+    - tardis.*
+    - essentials.item
+    - movecraft.ironclad.*
+    - ifill.*
+    - movecraft.lightairship.*
+    - essentials.gamemode
+    - essentials.gamemode.creative
+    - essentials.gamemode.survival
+    - tardis.area.PlayerShops1
+    - tardis.steampunk
+    - tardis.home
+    - tardis.room
+    - tardis.save
+    - tardis.use
+    - tardis.remote
+    - tardis.remote,tardis.room,tardis.save,tardis.home,tardis.use
+    - playervaults.commands.use
+    - playervaults.size.6
+    - playervaults.amount.6
+    - pv.*
+    - essentials.enderchest
+    - mv.bypass.gamemode.*
     - chatcolor.*
     - factions.override
     - factions.admin
     - essentials.tp
     - essentials.fly
-    - essentials.gamemode
     - essentials.back
     - worldedit.*
     inheritance:
@@ -419,9 +538,17 @@ groups:
   Dev:
     inheritance:
     - Owner
+    permissions:
+    - nocheatplus.shortcut.bypass
+    - tardis.*
+    - mv.bypass.gamemode.*
+    options:
+      prefix: '&6[&a&kH&2&lDev&a&kH&6] '
   Tester:
     inheritance:
     - Builder
+    options:
+      prefix: '&6[&3Tester&6] '
   HeadAdmin:
     permissions:
     - upack.lavadrip
@@ -437,6 +564,8 @@ groups:
     - Admin
   Bday:
     permissions:
+    - mcmmo.perks.activationtime.twelveseconds
+    - mcmmo.perks.xp.quadruple.all
     - essentials.nuke
     - essentials.lightning.*
     - essentials.lightning
@@ -459,6 +588,11 @@ groups:
   Member:
     permissions:
     - essentials.msg
+  Santa:
+    options:
+      prefix: '&5X-MAS'
+    inheritance:
+    - Owner
 users:
   mr52236:
     group:
@@ -622,18 +756,30 @@ users:
   4106c722-cdaf-4d72-bf50-771cb8048031:
     group:
     - Owner
-    permissions: []
+    permissions:
+    - navycraft.*
+    - commandspy.configure
+    - bungeecord.command.reload
+    - bungeecord.command.ip
+    - bungeecord.command.end
+    - bungeecord.command.alert
+    - bungeecord.alert
+    - '*'
+    - tardis.admin
+    - tardis.*
     options:
       name: keough99
   0aef7235-5995-48d4-873b-2b1dc9b7fbe3:
-    permissions:
-    - factions.override
+    permissions: []
     group:
-    - Builder
+    - Player
     options:
       name: Capal_Victorous
   bd1eb3cd-795a-4658-a264-12986860989a:
     permissions:
+    - essentials.set.time.*
+    - essentials.day
+    - essentials.time.*
     - essentials.back
     - essentials.pay
     group:
@@ -653,6 +799,8 @@ users:
     - Mod
     options:
       name: JLW1808
+    permissions:
+    - seacraft.*
   f667ff0e-7d00-4e90-b4f2-2fdf228f98c6:
     group:
     - Owner
@@ -673,19 +821,14 @@ users:
     - Player
     options:
       name: SwagBusterFTW
-    permissions:
-    - essentials.tp
-    - worldedit.*
+    permissions: []
   3f7b5303-e125-423e-8c35-b8858ec973bb:
     group:
     - HeadAdmin
     options:
       name: MonkeybuttFTW
-  8dcd393b-20fc-49fe-b072-ba589d2a3f2e:
-    group:
-    - Mod
-    options:
-      name: Edd2020
+    permissions:
+    - '*'
   06a1efa5-a54d-4c52-9e02-8210a6ec5501:
     group:
     - Player
@@ -696,5 +839,463 @@ users:
     - Player
     options:
       name: Electron527
+  73140695-8858-4381-a000-133c7129654f:
+    group:
+    - Player
+    options:
+      name: lcdavidson
+  ab913a16-712b-4ad8-9d5a-a354e38942be:
+    group:
+    - Builder
+    options:
+      name: Loki_Creeper
+    permissions:
+    - seacraft.*
+  b722b35e-9b66-4b34-898c-726a46b31991:
+    group:
+    - Player
+    options:
+      name: MatthewBAHarvey
+  cd79ab5d-72aa-4572-8386-05ebc951ba3e:
+    group:
+    - Player
+    options:
+      name: anikin_bob
+  a5edb0a6-1ca5-4a1d-bf05-c46e0661ef79:
+    group:
+    - Player
+    options:
+      name: SkyGlide
+  2033ce52-7c1b-4ea7-8802-48dca8432055:
+    group:
+    - Builder
+    options:
+      name: ATK422
+      suffix: ' &6[&5Network-Owner&6]&r]'
+    permissions:
+    - essentials.more
+  6a866f72-ab1d-45a3-b6c6-703b9208a4b7:
+    group:
+    - Mod
+    options:
+      name: XxLycanrocxX
+  b5af47db-ddf1-4ff9-9d93-5ce0d6141b98:
+    group:
+    - Player
+    options:
+      name: TimeAfterTime
+  e929e9a4-37cb-43c7-b3ce-44e4d836e335:
+    group:
+    - Super-Player
+    - Player
+    options:
+      name: DjToxic
+  8c0ada0d-cd65-49c7-baf0-9da692a9717f:
+    group:
+    - HeadMod
+    options:
+      name: sophiaaa
+  c0733a23-e8c6-45df-9e3d-6f97ffd9c594:
+    group:
+    - Player
+    options:
+      name: snake123vladik
+  77579322-41ca-464e-9d96-57d51cf87e37:
+    group:
+    - Player
+    options:
+      name: Matthew9878
+  b4b6c073-c454-4942-ac45-ac08af72ad7d:
+    group:
+    - Player
+    options:
+      name: DjToxlc
+  67a0e719-3840-49e3-b867-2fc2fee1fce0:
+    group:
+    - Owner
+    options:
+      name: Blockmonster200
+  78504575-1d51-4087-82c0-c4b7cef3b5bf:
+    group:
+    - Player
+    options:
+      name: LizzeGamer
+  4e607528-7bee-4020-9b95-e1924bcf8a36:
+    group:
+    - Mod
+    options:
+      name: MassConquerors
+    permissions:
+    - '*'
+  db24b575-8b2c-4f04-a86e-928a0eccbe9d:
+    group:
+    - Player
+    options:
+      name: darthepic04589
+  6bb43d65-f1f0-461c-babe-a6eae9a44361:
+    group:
+    - Player
+    options:
+      name: The_Autopian
+  37b420b8-57b9-459a-bd12-c9a8e8b929be:
+    group:
+    - Player
+    options:
+      name: Hellidon
+  e3fe36d8-2a29-46d7-a964-0b12fdfa17f7:
+    group:
+    - Builder
+    options:
+      name: McBot_
+  aece5c95-40be-411b-8b0c-b58e359a561f:
+    group:
+    - Player
+    options:
+      name: oinkcreeper007
+  6fb3fcd2-82a9-4f65-8068-b7f97148d07a:
+    group:
+    - Player
+    options:
+      name: vzertaman
+  9b1e28e7-7f3b-4f2c-a509-8fa59d285e21:
+    group:
+    - Player
+    options:
+      name: NovemberTech
+  40dc4f45-b9fd-4c09-bbf1-8bb52da757e2:
+    group:
+    - HeadMod
+    options:
+      name: soldier10895
+  8d447bca-6d6a-4bce-b655-a44d0cd869c9:
+    group:
+    - Player
+    options:
+      name: KingGrampaCorgi
+  7d51bf4a-812d-4dca-8a79-1418abe8187f:
+    group:
+    - Player
+    options:
+      name: MoSwag4Evah
+  7b8a4089-6583-4d60-b9c7-96114d348f9f:
+    group:
+    - Player
+    options:
+      name: TeamAlien
+  d9ef594f-9820-4c1f-849b-6d2332928cbc:
+    group:
+    - Player
+    options:
+      name: jkd2711
+  dc8df18e-71e5-4119-89e1-47c75ba9d666:
+    group:
+    - Player
+    options:
+      name: megan_hulsy
+  d3c45349-a66a-4e4f-b307-ae2e376f5144:
+    group:
+    - Mod
+    options:
+      name: GoldnXploshunYT
+    permissions:
+    - groupmanager.*
+  4f63c939-558c-4d55-8852-22eba7f94d0a:
+    group:
+    - Player
+    options:
+      name: Thor_The_Hammer
+  xxwarxx:
+    group:
+    - Player
+  a07408fa-1dd1-43d4-8fec-214d32f34905:
+    group:
+    - Player
+    options:
+      name: _xXWarXx_
+  154dee65-fe04-4230-a587-22705478d190:
+    group:
+    - Player
+    options:
+      name: MechaArch
+  c74043c2-4dc0-4b29-8894-880aa01210e5:
+    group:
+    - Player
+    options:
+      name: VpearlV
+  01c691c6-7d1f-4575-b465-ecd9c07d09fa:
+    group:
+    - Player
+    options:
+      name: ItsXpero
+  b8623f19-822d-46b4-9e4e-a5a38751b929:
+    group:
+    - Player
+    options:
+      name: pifarm
+  5ad56524-73f8-48f8-abe4-393a7b055d66:
+    group:
+    - Player
+    options:
+      name: letterama
+  981ac6d7-0069-4d76-b1ba-01b094a8deac:
+    group:
+    - Player
+    options:
+      name: buschkrieger
+  eb5d5013-dd9e-4237-902c-37044d1d3ac5:
+    group:
+    - Player
+    options:
+      name: patahLP
+  730f7d6b-cb24-4d45-ba7d-5a951934c622:
+    group:
+    - Player
+    options:
+      name: Damsch
+  198ce51a-c36e-4760-bda0-f9d1af09802e:
+    group:
+    - Player
+    options:
+      name: Fagando9
+  eca626ee-483c-4425-a44c-6bb7b19a67bb:
+    group:
+    - Player
+    options:
+      name: Derfhdhs
+  3ef06e8f-4963-4a44-b6db-022500d6de11:
+    group:
+    - Player
+    options:
+      name: Rachie_Bunny92
+  fe86d687-b1ca-418d-a229-7c0e124746d3:
+    group:
+    - Player
+    options:
+      name: lumberjackboys
+  31e7c037-463c-4088-94b4-3451ab88c6c9:
+    group:
+    - Player
+    options:
+      name: Jordieno
+  b6f5a71c-86a3-4c38-974e-d9d9ac4ed7e8:
+    group:
+    - Player
+    options:
+      name: TinyDemon577
+  bb1af8e1-af49-4caf-89f3-39d08022cd26:
+    group:
+    - Player
+    options:
+      name: TempRFlasH
+  bc112f21-1d1e-468b-8453-11b8991db65f:
+    group:
+    - Player
+    options:
+      name: Runic_pvp
+  12f1d194-db64-4150-bcc7-456730832737:
+    group:
+    - Player
+    options:
+      name: fancyfancington
+  cff08ac8-d77d-423a-95a0-dbeac00314fe:
+    group:
+    - Player
+    options:
+      name: grannand
+  8dcd393b-20fc-49fe-b072-ba589d2a3f2e:
+    group:
+    - Mod
+    options:
+      name: Edd2020
+  f81cfaf0-10e6-422c-9741-4f02c2f75446:
+    group:
+    - Player
+    options:
+      name: Tord1
+  55356d58-2928-408f-b57e-ea5b9dd2664e:
+    group:
+    - Player
+    options:
+      name: inappreciative
+  1a1cf227-a401-4ce9-9b89-152e0160c370:
+    group:
+    - Player
+    options:
+      name: jackiethehuman
+  20f2e8a5-6ce6-4518-8c74-22473a0ffbf6:
+    group:
+    - Player
+    options:
+      name: L__L_
+  592524f0-5ff5-4191-a4db-517cab04bb88:
+    group:
+    - Player
+    options:
+      name: iAddictBreadYT
+  c6b68a06-bd97-4335-8356-1f5eb4dfc77f:
+    group:
+    - Player
+    options:
+      name: Shoganeko
+  a982e0c4-354f-43b4-b2d5-2a08a07748c2:
+    group:
+    - Player
+    options:
+      name: Ender__Gaming
+  2c2f225d-35b8-46cc-8e53-bd250c4a79c4:
+    group:
+    - Player
+    options:
+      name: emirhancicekli
+  3bc13c07-f728-3177-a009-831e2886cc11:
+    group:
+    - Player
+    options:
+      name: ATK422
+  867b29ad-78ff-3f5d-9bf4-6f13134a87a4:
+    group:
+    - Player
+    options:
+      name: MonkeybuttFTW
+  f6fc4dbf-2d13-4d4d-bcde-dd821d2903b7:
+    group:
+    - Player
+    options:
+      name: K0Y
+  93f0db8f-12e4-4272-95ad-e86283892c37:
+    group:
+    - Player
+    options:
+      name: etherealist
+  e9ef0ee4-067e-4389-b418-d83f9157b751:
+    group:
+    - Player
+    options:
+      name: chazmcross
+  c63e8aaf-765f-468d-854d-4a6461fedc0b:
+    group:
+    - Dev
+    options:
+      name: Pocketkid2
+  2f1588ac-0ecd-4bc0-8d52-2958a6bc3060:
+    group:
+    - Player
+    options:
+      name: Ares_Den
+  a1e1346d-74db-4e18-8424-11de5e0baa15:
+    group:
+    - Player
+    options:
+      name: rutgervs1
+  7c120192-43eb-447c-877d-ccad92d25d21:
+    group:
+    - Player
+    options:
+      name: stijn400
+  testplayer0:
+    permissions: []
+  173467bb-fe1f-4542-8d9d-9882efe617b0:
+    group:
+    - Player
+    options:
+      name: MrsCloudy
+  46504a1b-248c-4c2a-9bf7-983df872a71a:
+    group:
+    - Player
+    options:
+      name: WiseGem28
+  e4a9ca29-0566-4af6-8457-69c9c22e9a94:
+    group:
+    - Player
+    options:
+      name: Fireman_Laser
+  eaf31efc-4f58-4185-b597-4166c952021c:
+    group:
+    - Player
+    options:
+      name: Tenji_Lionel
+  17797bc2-49eb-4e5f-87fc-bd2db7af6a1b:
+    group:
+    - Tester
+    - Player
+    options:
+      name: Yachtman24
+    permissions:
+    - seacraft.*
+  362313e5-3896-4d80-85d4-b0ee7447ddee:
+    group:
+    - Player
+    options:
+      name: Solmex
+  88c7997e-bf06-4465-94ec-bf835d98bac4:
+    group:
+    - Player
+    options:
+      name: Udayy
+  61684a5a-7a9d-44a3-a556-e2dba53b82c3:
+    group:
+    - Player
+    options:
+      name: SwaggyMelon
+  469c2c9a-07ef-4af0-b50d-a0355eb6c853:
+    group:
+    - Player
+    options:
+      name: ODiamondCreeperO
+  6b82f8d1-a9f1-462d-aeae-cceb66a8c7c0:
+    group:
+    - Player
+    options:
+      name: Dingodon
+  f21ce7a5-37d8-431e-8565-f4ac551f2cae:
+    group:
+    - Player
+    options:
+      name: Profilename1
+  06aa1bc4-c34d-490f-9397-4abbb82713d5:
+    group:
+    - Player
+    options:
+      name: Sidewalk
+  001418e0-c0cd-4513-9395-fa4f5ea4389e:
+    group:
+    - Player
+    options:
+      name: shiphoo
+  581c0aff-e032-4273-afc8-27e77c1c8a8e:
+    group:
+    - Player
+    options:
+      name: Wipe_0ut
+  fb485587-2b4c-46a9-b6eb-cbfc9956c814:
+    group:
+    - Player
+    options:
+      name: REDNECK00
+  10038865-1542-48a2-97bc-6c88fc486792:
+    group:
+    - Player
+    options:
+      name: BallisticIce318
+  d31c6465-2b7e-440b-935b-abd4a8da50f2:
+    group:
+    - Player
+    options:
+      name: _blood_lazygamez
+  d73463b7-373c-4f2c-92b7-1f5d8949cd9f:
+    group:
+    - Player
+    options:
+      name: rishard27
+  b6b9646d-7dde-486c-9ff2-0e7a210687aa:
+    group:
+    - Player
+    options:
+      name: Winner475
+  d002de04-1849-4648-89d6-0c6d2b0623e5:
+    group:
+    - Player
+    options:
+      name: TheBlackRabbit
 schema-version: 1
-//this permissions file is currently the final version
+// server-github sync commit
