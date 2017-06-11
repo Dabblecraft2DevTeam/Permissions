@@ -1,21 +1,21 @@
-factions.create
-factions.claim
-factions.leave
-factions.sethome
-factions.unsethome
-factions.invite
-factions.join
-factions.title
-factions.relation
-factions.money.kit.standard
-factions.autoclaim
-factions.deinvite
-factions.description
-factions.owner
-factions.noboom
-factions.open
-factions.ownerlist
-factions.power
-factions.version
-faction.title
+ - factions.create
+ - factions.claim
+ - factions.leave
+ - factions.sethome
+ - factions.unsethome
+ - factions.invite
+ - factions.join
+ - factions.title
+ - factions.relation
+ - factions.money.kit.standard
+ - factions.autoclaim
+ - factions.deinvite
+ - factions.description
+ - factions.owner
+ - factions.noboom
+ - factions.open
+ - factions.ownerlist
+ - factions.power
+ - factions.version
+ - faction.title
 
